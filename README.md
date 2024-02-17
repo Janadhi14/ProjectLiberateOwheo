@@ -1,5 +1,6 @@
 # Project: Liberate Owheo
 https://cosc360.otago.ac.nz/webgl/Hydra/index.html
+![Map traversal and Card Combat](photos/newview.png)
 ## By:
 - Janadhi Dissanayake - Lead Artist / Sound Design / Composer
 - Luke Webb - Designer / Programmer / Artist
@@ -24,5 +25,6 @@ https://cosc360.otago.ac.nz/webgl/Hydra/index.html
 ![Combat against the toaster enemy](photos/Fight1.png)
 ![Combat agaisnt the cable hydra enemy](photos/Fight2.png)
 ![Combat against the microwave enemy](photos/Fight3.png)
+![Combat against the pentuple](photos/Pentuple1.png)
 ![Example of overworld map navigation showing progression](photos/Map2.png)
 
