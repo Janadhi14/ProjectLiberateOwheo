@@ -1,6 +1,5 @@
 # Project: Liberate Owheo
-![Combat against the pentuple boss enemy](photos/Pentuple1.png)
-
+https://cosc360.otago.ac.nz/webgl/Hydra/index.html
 ## By:
 - Janadhi Dissanayake - Lead Artist / Sound Design / Composer
 - Luke Webb - Designer / Programmer / Artist
