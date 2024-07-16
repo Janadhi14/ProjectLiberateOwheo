@@ -1,0 +1,135 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{setspace} 
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\onehalfspacing
+\lstset{
+  basicstyle=\ttfamily,
+  breaklines=true,
+  frame=single
+}
+\geometry{left=1in,right=1in,top=1in,bottom=1in}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\pagestyle{fancy}
+\fancyhf{} 
+\rhead{Student ID: 6170302}
+\renewcommand{\headrulewidth}{0pt}
+\title{\textbf{Game Postmortem}}
+\author{Janadhi Dissanayake}
+\date{\today}
+\renewcommand\thesubsection{\alph{subsection}}
+\titleformat{\section}{\normalfont\Large\bfseries}{Question  \thesection}{1em}{}
+\titleformat{\subsection}[runin]{\normalfont\large\bfseries}{\thesubsection)}{1em}{} 
+\begin{document}
+\vspace{-1.5em} 
+\maketitle
+\thispagestyle{fancy}
+Project: Liberate Owheo is a rogue-like card game where you play as a disgruntled undergraduate at the University of Otago, whose graduation was interrupted by an AI entity. Your mission is to defeat the Animated AI enemies whom you must battle using various attack, defend, and mana cards to receive your Graduation certificate. The game is set at the beautiful University of Otago, featuring artwork that is centered around a pixel art style, and depicts iconic buildings and locations throughout the campus. This game was developed in Unity and utilises a WebGL build to provide an accessible gaming experience on the web. 
+\\\\
+The team for this project consisted of Celeste Holt as lead programmer, Luke Webb as programmer/developer, Michael Campbell as programmer/developer, and myself(Janadhi Dissanayake) as the lead artist/music composer. We were all based in Dunedin and arranged numerous in-person meetings from the first day which I believe played a huge role in being able to communicate our ideas effectively to one another to ensure that this game was unique. Apart from Discord and Trello, as a team, we used Miro board, an online visual workspace. This application was used for brainstorming and getting ideas down for our game through modeling different instances for the turn-based gameplay, before development.
+\\\\
+Project Liberate Owheo sets itself apart from many other card games through a combination of different features. One of these being the setting at the heart of Otago University with historical backdrops and iconic architecture. Not only did this function to drive the storyline but also acted as a source of inspiration for character development throughout the design phase. For example; microwaves in the kitchen areas, the emergency alarms, and iconic statues located across the campus were transformed into different AI enemies that the player must battle against and backdrops included the clocktower, lecture theatres as well as the Owheo building, which provided the target audience with a sense of familiarity as they may have seen these items across the campus.
+\\\\
+It is also important to highlight the cohesion of the pixel art style with the game being set at The University of Otago. This adds a new dimension to our multifaceted game that creates a unique visual experience and differentiates it from other games that have more conventional cartoon-like graphics. This decision was made not only to have a nostalgic connection to pixel art but to simplify the visuals ensuring that the artwork could be custom whilst allowing timely completion so deadlines were. 
+\\\\
+Although this game offers a sense of familiarity, every time the player plays a new game, a novel map with random mystery encounters and random drop chance of cards is generated. The unpredictability creates a unique experience every time and functions to maintain player engagement over multiple playthroughs. This feature is quite distinctive and enables the player to continuously adjust their tactics based on the hand they are dealt or the challenges they encounter as they traverse the map. Since it is woven into the game’s core mechanics, this randomness creates a unique gaming experience for the player and distances our game from others.
+\\\\
+\begin{center}
+{\large \textbf{Two things that went well}}
+\end{center}
+One of the main aspects of this entire game development process that worked far beyond my expectations was the fact that everyone in the team gelled unbelievably well together within the roles that we chose for ourselves. Throughout the entire process, the group felt as though we were united in our decisions and we all got along seamlessly. This was not only beneficial for the game development but also provided each other with a sense of relief as we were able to be ourselves around each other so that we could express our opinions if the game was going down a path that was of concern to us. 
+\\\\
+This team composition may have been purely due to pure luck however, the synergistic effect that our personalities had, could have been attributed to our individual experiences outside of the paper. Celeste and Luke, for example, had a background in Unity and developing state machines for games before commencing this paper. This allowed them to go down the path of being the developers/programmers whereas, Michael and myself had previous experience in design and art that allowed us to tackle a lot of the character artwork and card design for this game. The division of labour to those who have the experience allowed us to not only be comfortable in what we were doing but also ensured that we were able to capitalise on the skill sets to produce the best game possible within the short timeframe. 
+\\\\
+The communication within the team was another major factor that was extraordinary. From day one, discord was established as one of the main ways of communication but we were very fortunate in the sense that we were all based in Dunedin and thus we could meet in person and collaborate on the project. I firmly believe this helped us tremendously as we were able to gain more feedback through human interaction with our team members as opposed to only communicating through discord.
+\\\\
+An example of communication that stood out for me was whenever we were working on the game, we would join the discord voice channel in our private team Hydra discord. This allowed others to see that we were chipping away at the project but the presence on the voice channel acted in a way that invited other members of the team to join the call, share screens, and see what we were all working on. Being able to do this not only helped each other to stay on the same page but held us accountable for completing tasks as this would occur daily while we worked through developing the game. 
+\\\\
+\begin{center}
+{\large \textbf{Two things that didn't go well}}
+\end{center}
+A major challenge that we faced was trying to incorporate everything we envisioned into the game. This was made apparent to us by Runaway during the in-house playtesting, where members of their team expressed concern, stating that it would be very difficult under the time constraints to implement all the different elements that we wanted and suggested developing a priority list to ensure we have a minimum viable product at the end of the development cycle. Initially, we had the belief that we would be able to create overworld exploration using a tile map, parallax for the backgrounds, more boss battles, and card inventory manager for deck building however, we had to stop what we were doing on these features and focus on the card battles and implemented a node map navigation instead of the tilemap overworld to maximize the core focus on the card battles to meet the deadlines for the beta release. 
+\\\\
+One potential way this challenge could have been avoided completely would have been through establishing a clearer time frame-based Trello board as this would have cleared up the time needed to complete tasks and all the tasks. We could have also gone back and reviewed the game design steps, which would have involved narrowing the scope of the game and coming up with more realistic time-based targets for developing the game thus preventing us from beginning work on an overworld artwork and card inventory system.
+\\\\
+Another aspect of this whole process that didn't go quite to plan was the failure to incorporate two different styles of artwork. Our initial vision was to develop an overworld exploration map that would direct the player down into enemy encounters where they would enter the battle scenes. From here, we began to think about using two different styles of art, one which would have low pixel density tile map style overworld exploration and a higher pixel density for the card battles so we could see more details on the characters which could assist in reinforcing the storyline.
+\\\\
+Firstly, we had initial concerns that the introduction of two different styles would cause our game to come across as two distinct games fused into one, which was certainly not our intention. As a team, we agreed that the game should be cohesive in every aspect and if we were to generate two different art styles with over-world navigation and card battles would introduce too much disconnect between the two, potentially complicating the game mechanics and overwhelming the players.
+\\\\
+Secondly, the collision of styles became apparent after getting the feedback for assignment two where our lecturer Lech, expressed his concern stating “mish-mash of styles that don’t seem to go together”. Taking this feedback seriously, we immediately reevaluated our approach and concluded that adopting a single, unified style was crucial to eliminating this disparity and enhancing the game's overall coherence.
+\\\\
+In retrospect, the decision not to have two different styles of art turned out to be one of the best decisions we could have made but the initial stages of designing this did cost us time. Continuing with a more detailed art style, in addition to what we already had, would have significantly stretched our time and resources towards the end of the project and could have caused major downstream effects later on during the polishing and beta release phases. This problem could have been eliminated if we had been more clear in the early design stages of the game which wouldn’t have allowed us to go down the rabbit hole of creating two different styles of games within one game. Fortunately, we managed to recover by abandoning the overworld navigation and higher pixel-density canvas art and prioritising the card battles.
+\\\\
+Ultimately creating Project: Liberate Owheo has been one of my most memorable and enjoyable endeavours as I have not only gotten the chance to be part of an amazing team but to work alongside them to create something that challenged me from multiple directions, particularly through time constraints. This project has also provided me insight into those that go into game development and I have a far greater sense of appreciation for games that I see now having been part of this experience.
+\newpage
+\begin{center}
+{\LARGE \textbf{Game Analysis}}
+
+\end{center}
+\begin{center}
+{\large \textbf{The Lens of Skill vs Chance}}
+\end{center}
+\vspace{0.5em}           
+\begin{center}
+\textbf{Are my players here to be judged (skill) or to take risks (chance)?}
+\end{center}
+\vspace{1.5em} 
+Our game, as it stands, does offer the player the opportunity to use their skills but the random nature of the card drops and procedural map generation skews it slightly more towards the players taking risks involuntarily as they choose a node path to go down. There are two possible ways to balance this game such that the players are judged more, rather than taking risks and relying on chance.
+\\\\
+Firstly, we introduce an optional selection scene where the player can choose between losing thirty health or only being able to play four cards for the next encounter. This would allow the player to skillfully navigate the nodes by making more decisions as they go and thus could help reduce the impact of the random encounters that don’t currently allow the player to wager between multiple options. By doing this the player is being judged more on their decision-making skills rather than risk-taking.
+\\\\
+Another way to push this game more in favor of skill is through the use of deck building and giving the player the ability to pick what cards to play for every turn. Due to the time constraints of the project, we were unable to implement a deck-building feature but it would be far more engaging for the player, allowing them to use their thinking skills to take risks for every individual battle by selecting certain cards based on what they perceive the strength of the enemy to be. More importantly, deck building would allow the players to be judged on their ability to manage their inventory of cards throughout the game rather than leaving it up to a randomized script running in the background and thus involving the player's skills. This would essentially improve the player experience as it gives the game a whole new meaning through the use of skill to accumulate cards and use them appropriately 
+\\\\
+\begin{center}
+\textbf{Skill tends to be more serious than chance: is my game serious or casual?}
+\end{center}
+\vspace{1.5em} 
+The current game has a good mix of both casual gameplay as a result of the plot being an undergrad student and the beginner enemies however as you progress through the map the seriousness increases as enemies start dealing more damage and start using combinations of shielding and attacking, particularly elite enemies and boss enemies. 
+\\\\
+Overall I believe the casual tone at the start functions to hook the player in and when the game starts to become more difficult it keeps the player engaged and determined enough to finish the game. This was one of the aspects of the game that I believe has been balanced quite well and the fact that the health of the player doesn't get reset as you progress to the new battles, adds more seriousness from the starting battle onwards. Whilst the game starts casually this can also lead the player into a false sense of confidence as the game becomes harder as you progress so thus requiring the player to carefully manage resources and make strategic decisions as they progress. 
+\newpage
+After discussions with playtesters, one thing that stood out was that players lost a large amount of health in a random encounter that they had no control over, significantly impacting their ability to beat the final boss or making it impossible for them to beat the final boss. This feedback highlights the importance of change within this game and it also indicates that it may be slightly biased towards chance rather than skill making it too casual. 
+\\\\\
+From this insight, we could look at the possibility of decreasing the number of random encounters that affect the player resources as you progress which can help reduce the casualness of the game because we are not leaving it up to chance. This modification will allow the player to focus more on the battles and also reduce the casualness of the game.
+\\\\
+From the starting node, the players are locked into one path that they cannot change later. This potentially hints at the idea of a path-switching card being introduced that can be unlocked at later stages of the battle, allowing the player to jump between paths. As a feature, this could also assist in making the game more serious and require the player to use their strategic skills to switch between nodes.
+\\\\
+\begin{center}
+\textbf{Are parts of my game tedious? If so, will adding elements of chance enliven them?}
+\end{center}
+\vspace{1.5em} 
+Whilst Project: Liberate Owheo as a whole does not lean towards being tedious, there can be certain enemy encounters during the gameplay that can result in certain battles becoming mundane. From recent playthroughs, I observed that elite and boss enemy battles tended to take much longer due to both the player and the enemy shielding with larger shield values so thus there is no progress on either side which leading to a long stalemate until the shield has worn off in the next turn. 
+\\\\
+These mundane periods during battles can largely be attributed to the random generation of a new hand for each turn which contains a series of random cards that the player is unable to choose. The introduction of deck building could result in reducing this as the player can gain more control and defeat enemies faster but this doesn’t necessarily introduce elements of chance.
+\\\\
+Random card drops during a battle could be a pathway that could be explored to bring life to more mundane enemy encounters through the use of randomness. This would initially require the identification of enemy encounters that are prone to becoming repetitive or taking too long. From there, a system based either on turn number or time within battle could be used to randomly drop a card that the player can use immediately to get out of the stalemate. By doing this we essentially use elements of chance to enliven the parts of the game that are entrenched in repetitive cycles.
+\newpage
+\begin{center}
+\textbf{Do parts of my game feel too random? If so, will replacing elements of chance with elements of skill or strategy make the players feel more in control?}
+\vspace{1.5em} 
+\end{center}
+In its current iteration, Project: Liberate Owheo favors elements of randomness slightly more than we anticipated. A key factor contributing to this is the lack of a deck-building feature. Currently, players are dealt a random hand for each turn and can't view their full card inventory nor select specific cards they want for each battle. The lack of a deck-building feature was mainly due to time constraints and the focus required for other parts of the game and thus it escaped being on the priority list.
+\\\\
+This randomness of having a new hand generated each turn can take away from the player's sense of control and strategic involvement. Ideally, we would integrate a deck-building component into the game. This feature would allow players to strategically choose and manage their card inventory as they progress, significantly increasing the element of skill in gameplay. By allowing players to build and customise their decks, we can shift the game's balance towards skillful planning and strategy, therefore providing a more controlled and engaging experience rather than relying on the buuilt in random chances.
+\\\\
+Implementing deck-building would not only reduce the game's reliance on random chance with a more skill and strategy based element but it would also empower players to feel more in command of their gameplay decisions. This would add more depth to the game and crucial for improving the "fun" aspect of this game.
+\\\\
+\begin{center}
+    {\large \textbf{References}}
+\end{center}
+\vspace{3em} 
+\noindent Schell, J. (2015). \textit{The art of game design: A book of lenses} (2nd ed.). CRC Press/Taylor \& Francis Group.
+\end{document}
+
